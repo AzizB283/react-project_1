@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import moment from "moment";
 // import "antd/dist/antd.css";
 
-function Home() {
+function Home(props) {
   const [time, setTime] = useState();
 
   useEffect(() => {
@@ -14,12 +14,12 @@ function Home() {
     return function cleanup() {
       clearInterval(interval);
     };
-  }, []);
+  }, [time]);
 
 //   console.log("first");
   return (
     <>
-      <h1>Home</h1>
+      <h1>{props.homePage}</h1>
       <h4>
         Today's Date & Time : <span>{time}</span>
       </h4>

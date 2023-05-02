@@ -1,43 +1,43 @@
 import React from "react";
 import { Menu } from "antd";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
-const items = [
-  {
-    label: "Home",
-    key: "mail",
-  },
-  {
-    label: "Blogs",
-    key: "app",
-  },
-
-  {
-    label: "Contact",
-    key: "contact",
-  },
-
-  {
-    label: "About",
-    key: "about",
-  },
-
-];
 
 function Header1() {
-  const [current, setCurrent] = useState("mail");
-  const onClick = (e) => {
-    console.log("click ", e);
-    setCurrent(e.key);
-  };
+  const mystyle = {
+    textDecoration: "none"
+  }
+  
+ 
   return (
+    
     <>
-      <Menu
-        onClick={onClick}
-        selectedKeys={[current]}
-        mode="horizontal"
-        items={items}
-      />
+   <Menu mode="horizontal" theme="dark" >
+        <Menu.Item key="home">
+          <NavLink to="/" style={mystyle}>Home</NavLink>
+        </Menu.Item>
+
+        <Menu.Item key="blogs">
+          <NavLink to="/blogs" style={mystyle}>Blogs</NavLink>
+        </Menu.Item>
+
+        <Menu.Item key="about">
+          <NavLink to="/about" style={mystyle}>About</NavLink>
+        </Menu.Item>
+
+        <Menu.Item key="contact">
+          <NavLink to="/contact" style={mystyle}>Contact</NavLink>
+        </Menu.Item>
+
+        <Menu.Item key="antdesign">
+          <NavLink to="/antdesign" style={mystyle}>Ant Design</NavLink>
+        </Menu.Item>
+
+        <Menu.Item key="form">
+          <NavLink to="/form" style={mystyle}>Form</NavLink>
+        </Menu.Item>
+      </Menu>
     </>
   );
 }

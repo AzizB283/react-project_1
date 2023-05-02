@@ -53,6 +53,12 @@ function Header2() {
                 </NavLink>
               </li>
 
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/form">
+                  Formik Form
+                </NavLink>
+              </li>
+
             </ul>
             <span className="navbar-text">
               <Avatar style={{ backgroundColor: '#87d068' }} icon={<UserOutlined />} />
