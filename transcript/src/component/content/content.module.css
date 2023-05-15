@@ -1,0 +1,20 @@
+.col {
+  background-color: #daf2dc;
+  padding: 1rem;
+  height: 25vh;
+  color: black;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content {
+  font-size: 1rem;
+}
+
+.heading {
+  text-align: left;
+  margin-bottom: 1rem;
+}
