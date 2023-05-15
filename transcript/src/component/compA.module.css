@@ -1,0 +1,58 @@
+.divStyle {
+  overflow-y: scroll;
+  max-height: 73vh;
+  font-size: 16px;
+  /* padding: 10px; */
+}
+
+.space {
+  display: flex;
+}
+
+.card {
+  border: 1px solid rgb(185, 185, 185);
+}
+
+.innercard {
+  border: 1px solid rgb(58, 57, 57);
+}
+
+.col2 {
+  min-height: 79vh;
+}
+
+.error {
+  color: red;
+  font-size: 24px;
+}
+
+.headerStyle {
+  text-align: center;
+  color: #fff;
+  height: 10vh;
+  padding-inline: 50px;
+  line-height: 64px;
+  background-color: #7dbcea;
+}
+
+.siderStyle {
+  text-align: center;
+  line-height: 120px;
+  color: #fff;
+  background-color: #3ba0e9;
+}
+
+.contentStyle {
+  text-align: center;
+  min-height: 80vh;
+  line-height: 120px;
+  color: #fff;
+  background-color: #108ee9;
+}
+
+.footerStyle {
+  text-align: center;
+  color: #fff;
+  background-color: #7dbcea;
+  height: 10vh;
+}
